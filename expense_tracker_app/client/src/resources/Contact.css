@@ -1,0 +1,51 @@
+.con-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 24px;
+    background-color: #ffd300 ;
+    input {
+      width: 50%;
+      height: 35px;
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid rgb(220, 220, 220);
+
+      &:focus {
+        border: 2px solid rgba(0, 206, 158, 1);
+      }
+    }
+    textarea {
+      max-width: 50%;
+      min-width: 50%;
+      width: 100%;
+      max-height: 100px;
+      min-height: 200px;
+      padding: 7px;
+      outline: none;
+      border-radius: 5px;
+      border: 1px solid rgb(220, 220, 220);
+
+      &:focus {
+        border: 2px solid rgba(0, 206, 158, 1);
+      }
+    }
+
+    label {
+      margin-top: 1rem;
+    }
+
+    input[type="submit"] {
+      margin-top: 2rem;
+      width: 250px;
+      cursor: pointer;
+      background: rgb(249, 105, 14);
+      color: white;
+      border: none;
+      transition: all 1s;
+    }
+    input[type="submit"]:hover{
+        box-shadow: 0px 0px 25px 0px;
+    }
+  }

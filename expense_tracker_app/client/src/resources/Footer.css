@@ -1,0 +1,41 @@
+/* src/Footer.css */
+.footer {
+    padding: 0 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    padding: 100px 0px 0px 0px;
+    position: relative;
+    overflow: hidden;
+    height: 35vh;
+}
+
+.contain1 {
+    height: 30vh;
+      position: absolute;
+      bottom: 0;
+      left:35%;
+    }
+    
+    .footer-info, .footer-nav, .footer-social {
+      margin-bottom: 1rem;
+    }
+  .footer-nav ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-nav ul li, .footer-social ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer-nav ul li a, .footer-social ul li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .footer-nav ul li a:hover, .footer-social ul li a:hover {
+    text-decoration: underline;
+  }
+  

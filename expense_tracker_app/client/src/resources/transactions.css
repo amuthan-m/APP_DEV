@@ -1,0 +1,140 @@
+/* Main container */
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fffbe6;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Filter section */
+  .filter-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .filter-item {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .filter-item h6 {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #d48806;
+  }
+  
+  /* View switcher section */
+  .view-switch-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .view-switch-icon {
+    font-size: 26px;
+    margin: 0 10px;
+    color: #faad14;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .view-switch-icon:hover {
+    color: #ffd666;
+  }
+  
+  .active-icon {
+    color: #ffc53d;
+  }
+  
+  .add-new {
+    background-color: #ffc53d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-new:hover {
+    background-color: #ffec3d;
+  }
+  
+  /* Content section */
+  .content-section {
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Table styling */
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .table-container .ant-table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .ant-table-thead > tr > th {
+    background-color: #fffbe6;
+    font-weight: 600;
+    color: #d48806;
+  }
+  
+  .ant-table-tbody > tr > td {
+    padding: 12px;
+    background-color: #ffffff;
+  }
+  
+  .ant-table-tbody > tr:hover > td {
+    background-color: #fff1b8;
+  }
+  
+  /* Action icons */
+  .ant-table-cell .anticon {
+    font-size: 18px;
+    color: #faad14;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .ant-table-cell .anticon:hover {
+    color: #ffd666;
+  }
+  
+  /* Tooltip styling */
+  .ant-tooltip-inner {
+    background-color: #faad14;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .filter-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .view-switch-container {
+      margin-top: 10px;
+    }
+  
+    .content-section {
+      padding: 15px;
+    }
+  }
+  

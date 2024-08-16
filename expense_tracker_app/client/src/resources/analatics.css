@@ -1,0 +1,137 @@
+.transactions-count {
+    box-shadow: 0 0 2px rgb(132, 131, 131);
+    padding: 15px;
+    border-radius: 10px;
+    color: #333333 !important;
+  }
+  
+  .analytics h4 {
+    font-size: 20px;
+    color: #333333 !important;
+    font-weight: 600;
+  }
+  
+  .analytics h5 {
+    font-size: 16px;
+    color: #333333 !important;
+  }
+  
+  .progress-bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .progress-bar-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .progress-income {
+    margin-right: 10px; /* Adjust spacing between progress bars  */
+  }
+  
+  .progress-expense {
+    margin-left: 10px; /* Adjust spacing between progress bars */
+  }
+  
+  .category-card {
+    padding: 5px 20px;
+    box-shadow: 0 0 2px #333333;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* .transactions-count{
+    box-shadow: 0 0 2px rgb(132, 131, 131);
+    padding: 15px;
+    border-radius: 10px;
+    color: rgb(56, 55, 55) !important;
+  }
+  
+  .analytics h4{
+    font-size: 20px;
+    color: gray !important;
+    font-weight: 600;
+  }
+  .analytics h5{
+    font-size: 16px;
+    color: gray !important;
+  }
+  
+  .category-card{
+    padding: 5px 20px;
+    box-shadow: 0 0 2px gray;
+    margin-top: 15px;
+    border-radius: 5px;
+  } */

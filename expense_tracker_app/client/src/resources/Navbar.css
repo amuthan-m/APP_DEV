@@ -1,0 +1,102 @@
+@import url(https://db.onlinewebfonts.com/c/b596fe7f763c7633f489a1acdbb13c70?family=Maison+Neue+Demi);
+.Navbar{
+    width: 95%;
+    border-radius:5px ;
+    position: fixed;
+    left: 25px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.Navbar ul{
+    flex:1;
+    list-style: none;
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+.Navbar ul li{
+    display: inline-block;
+    margin:10px 15px;
+    font-size: 16px;
+    cursor:pointer;
+}
+.Navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: "maison neue demi";
+    padding: 15px 0;
+    position: relative;
+    transition: color 0.3s;
+}
+.Navbar ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: black;
+    transition: width 0.2s ease, right 0.2s ease;
+}
+.Navbar ul li a:hover::after{
+    width: 100%;
+    right: 0;
+}
+.but-login-signup{
+    position: absolute;
+    right: 10px;
+    top:5px;
+}
+.but-login-signup a{
+    background-color: #E54927;
+    display:inline-block;
+    height: 50px ;
+    position: relative;
+    padding: 6px 0px;
+    color:#fff;
+    font-size: 16px;
+    font-family: "maison neue demi",sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 2px solid #E54927;
+    overflow:hidden;
+    transition: all 1s ease-in-out;
+    
+    width: 160px;
+    margin-right:10px ;
+
+}
+.but-login-signup a::after{
+     /* Arrow character */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.8s ease;
+    font-size: 18px;
+    color: #ffffff; 
+}
+.but-login-signup a:hover{
+    width:200px;
+}
+.but-login-signup a:hover::after{
+    opacity: 1;
+    right:10px;
+}
+.Navbar .logo img{
+    height: 60px;
+    transition: all 0.5s;
+    -webkit-filter: drop-shadow(2px 2px 2px #222);
+}
+.Navbar .logo img:hover{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+}

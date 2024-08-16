@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ffd300;
+    margin-bottom: 20px;
+    
+}
+
+.sidebar {
+    width: 96%; 
+    background-color: #edd27a;
+    padding: 30px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+    margin-left: 20px; /* Add space between sidebar and screen edge */
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+.sidebar.visible {
+    transform: translateX(0);
+}
+
+.sidebar-header {
+    display: none;
+}
+
+.sidebar-toggle {
+    display: none;
+}
+
+.logo {
+    font-size: 25px;
+    margin: 0;
+    cursor: pointer;
+    
+}
+
+.user-info {
+    margin-top: 0; /* Reset margin-top */
+     /* Space below username */
+     /* Add padding at the bottom to push content down */
+     position: absolute;
+    right:20%;
+}
+
+.username {
+    font-size: 25px;
+    margin: 0; /* Remove margin to align at the top */
+}
+
+.logout-button {
+    margin-top: auto;
+}
+
+.content {
+    flex-grow: 1;
+    height: calc(100vh - 40px); /* Adjusted for padding */
+    box-shadow: 0 0 3px #E0E0E0;
+    margin-left: 20px; /* Adjusted margin for space from sidebar */
+    margin-right: 25px;
+    border-radius: 25px;
+    padding: 15px;
+    overflow: auto;
+    background-color: white;
+}
+
+.logo-mobile {
+    display: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ant-spin-dot {
+    color: black;
+}
+
+@media screen and (max-width: 700px) {
+    .layout {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        margin-left: 0; /* Remove margin for mobile */
+        padding: 30px 15px; /* Adjust padding for mobile view */
+    }
+
+    .sidebar-toggle {
+        display: block;
+        margin: 15px;
+        font-size: 24px;
+        color: #333;
+    }
+
+    .sidebar.hidden {
+        display: none;body {
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        .layout {
+            display: flex;
+            height: 100vh;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        .sidebar {
+            width: 250px;
+            background-color: #f0df7f;
+            padding: 30px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease;
+            margin-left: 20px; /* Add space between sidebar and screen edge */
+        }
+        
+        .sidebar.hidden {
+            transform: translateX(-100%);
+        }
+        
+        .sidebar.visible {
+            transform: translateX(0);
+        }
+        
+        .sidebar-header {
+            display: none;
+        }
+        
+        .sidebar-toggle {
+            display: none;
+        }
+        
+        .logo {
+            font-size: 30px;
+            margin: 0;
+            cursor: pointer;
+        }
+        
+        .user-info {
+            margin-bottom: 20px; /* Space below username */
+        }
+        
+        .username {
+            font-size: 20px;
+            margin: 0; /* Remove margin to align at the top */
+        }
+        
+        .logout-button {
+            margin-top: auto; /* Pushes the logout button to the bottom */
+        }
+        
+        .content {
+            flex-grow: 1;
+            height: calc(100vh - 40px); /* Adjusted for padding */
+            box-shadow: 0 0 3px black;
+            margin-left: 20px; /* Adjusted margin for space from sidebar */
+            margin-right: 25px;
+            border-radius: 25px;
+            padding: 15px;
+            overflow: auto;
+        }
+        
+        .logo-mobile {
+            display: none;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .spinner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .ant-spin-dot {
+            color: black;
+        }
+        
+        @media screen and (max-width: 700px) {
+            .layout {
+                flex-direction: column;
+                margin: 0;
+            }
+        
+            .sidebar {
+                width: 100%;
+                height: auto;
+                border-radius: 25px;
+                margin-bottom: 20px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+                margin-left: 0; /* Remove margin for mobile */
+                padding: 30px 15px; /* Adjust padding for mobile view */
+            }
+        
+            .sidebar-toggle {
+                display: block;
+                margin: 15px;
+                font-size: 24px;
+                color: #333;
+            }
+        
+            .sidebar.hidden {
+                display: none;
+            }
+        
+            .logo {
+                display: none;
+            }
+        
+            .logo-mobile {
+                display: block;
+            }
+        
+            .content {
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 70px; /* Adjust for the fixed sidebar height */
+            }
+        }
+        
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 70px; /* Adjust for the fixed sidebar height */
+    }
+}
